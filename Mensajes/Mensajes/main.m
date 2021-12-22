@@ -6,11 +6,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Mensaje.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSLog(@"hola puta madre");
+        NSLog(@"%s", [Mensaje saludo]);
+        NSLog(@"%@", [Mensaje saludo2]);
+        NSLog(@"%@", [Mensaje saludoNombre:@"Omar" andApellido:@"Martínez"]);
     }
     return 0;
 }
