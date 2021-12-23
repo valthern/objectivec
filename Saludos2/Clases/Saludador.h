@@ -15,7 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 }
 -init;
 -(id)initWithSaludo:(NSString *)unSaludo;
--(void)
+-(void)setSaludo:(char *)unSaludo;
+-(void)setSaludo:(char *)unSaludo y:(char *)unaColetilla;
+-(void)saluda;
 @end
 
 NS_ASSUME_NONNULL_END
