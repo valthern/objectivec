@@ -6,11 +6,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Saludador.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        Saludador * s = [[Saludador alloc]init];
+        [s saluda];
+        [s setSaludo:"Hola de nuevo"];
+        [s saluda];
+        [s setSaludo:"Hola, buenos días" y:"Encantado de verte"];
+        [s saluda];
+        
+        Saludador * s1 = [[Saludador alloc] initWithSaludo:@"Hola desde el constructor"];
+        [s1 saluda];
+        [s1 setSaludo:"Hola de nuevo"];
+        [s1 saluda];
+        [s1 setSaludo:"Hola, buenos días" y:"Encantado de verte"];
+        [s1 saluda];
     }
     return 0;
 }

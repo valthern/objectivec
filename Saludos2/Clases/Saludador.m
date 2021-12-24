@@ -29,6 +29,12 @@
 }
 
 -(void)setSaludo:(char *)unSaludo y:(char *)unaColetilla{
-    
+    saludo = malloc(strlen(unSaludo) + strlen(unaColetilla) + 1);
+    strcpy(saludo, unSaludo);
+    strcat(saludo, unaColetilla);
+}
+
+-(void)saluda{
+    printf("%s\n", saludo);
 }
 @end
