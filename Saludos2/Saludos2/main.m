@@ -4,6 +4,7 @@
 //
 //  Created by Omar I. Martínez Gómez on 21/12/21.
 //
+// Ejemplo para trabajar con los inicializadores
 
 #import <Foundation/Foundation.h>
 #import "Saludador.h"
