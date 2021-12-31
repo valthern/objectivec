@@ -3,32 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		074569FE277D75A7005FE154 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 074569FD277D75A7005FE154 /* main.m */; };
+		0767AA38277EB4F9001F5596 /* Saludador.h in Headers */ = {isa = PBXBuildFile; fileRef = 0767AA36277EB4F9001F5596 /* Saludador.h */; };
+		0767AA39277EB4F9001F5596 /* Saludador.m in Sources */ = {isa = PBXBuildFile; fileRef = 0767AA37277EB4F9001F5596 /* Saludador.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		074569F8277D75A7005FE154 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		074569FA277D75A7005FE154 /* Herencia */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Herencia; sourceTree = BUILT_PRODUCTS_DIR; };
-		074569FD277D75A7005FE154 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0767AA2F277EB40B001F5596 /* libSaludosEstatico.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSaludosEstatico.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0767AA36277EB4F9001F5596 /* Saludador.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Saludador.h; sourceTree = "<group>"; };
+		0767AA37277EB4F9001F5596 /* Saludador.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Saludador.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		074569F7277D75A7005FE154 /* Frameworks */ = {
+		0767AA2D277EB40B001F5596 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,95 +28,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		074569F1277D75A6005FE154 = {
+		0767AA26277EB40B001F5596 = {
 			isa = PBXGroup;
 			children = (
-				074569FC277D75A7005FE154 /* Herencia */,
-				074569FB277D75A7005FE154 /* Products */,
+				0767AA36277EB4F9001F5596 /* Saludador.h */,
+				0767AA37277EB4F9001F5596 /* Saludador.m */,
+				0767AA30277EB40B001F5596 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		074569FB277D75A7005FE154 /* Products */ = {
+		0767AA30277EB40B001F5596 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				074569FA277D75A7005FE154 /* Herencia */,
+				0767AA2F277EB40B001F5596 /* libSaludosEstatico.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		074569FC277D75A7005FE154 /* Herencia */ = {
-			isa = PBXGroup;
-			children = (
-				074569FD277D75A7005FE154 /* main.m */,
-			);
-			path = Herencia;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		0767AA2B277EB40B001F5596 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0767AA38277EB4F9001F5596 /* Saludador.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		074569F9277D75A7005FE154 /* Herencia */ = {
+		0767AA2E277EB40B001F5596 /* SaludosEstatico */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07456A01277D75A7005FE154 /* Build configuration list for PBXNativeTarget "Herencia" */;
+			buildConfigurationList = 0767AA33277EB40B001F5596 /* Build configuration list for PBXNativeTarget "SaludosEstatico" */;
 			buildPhases = (
-				074569F6277D75A7005FE154 /* Sources */,
-				074569F7277D75A7005FE154 /* Frameworks */,
-				074569F8277D75A7005FE154 /* CopyFiles */,
+				0767AA2B277EB40B001F5596 /* Headers */,
+				0767AA2C277EB40B001F5596 /* Sources */,
+				0767AA2D277EB40B001F5596 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Herencia;
-			productName = Herencia;
-			productReference = 074569FA277D75A7005FE154 /* Herencia */;
-			productType = "com.apple.product-type.tool";
+			name = SaludosEstatico;
+			productName = SaludosEstatico;
+			productReference = 0767AA2F277EB40B001F5596 /* libSaludosEstatico.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		074569F2277D75A6005FE154 /* Project object */ = {
+		0767AA27277EB40B001F5596 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					074569F9277D75A7005FE154 = {
+					0767AA2E277EB40B001F5596 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 074569F5277D75A7005FE154 /* Build configuration list for PBXProject "Herencia" */;
-			compatibilityVersion = "Xcode 12.0";
+			buildConfigurationList = 0767AA2A277EB40B001F5596 /* Build configuration list for PBXProject "SaludosEstatico" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 074569F1277D75A6005FE154;
-			productRefGroup = 074569FB277D75A7005FE154 /* Products */;
+			mainGroup = 0767AA26277EB40B001F5596;
+			productRefGroup = 0767AA30277EB40B001F5596 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				074569F9277D75A7005FE154 /* Herencia */,
+				0767AA2E277EB40B001F5596 /* SaludosEstatico */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		074569F6277D75A7005FE154 /* Sources */ = {
+		0767AA2C277EB40B001F5596 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				074569FE277D75A7005FE154 /* main.m in Sources */,
+				0767AA39277EB4F9001F5596 /* Saludador.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		074569FF277D75A7005FE154 /* Debug */ = {
+		0767AA31277EB40B001F5596 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -135,7 +129,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -185,7 +179,7 @@
 			};
 			name = Debug;
 		};
-		07456A00277D75A7005FE154 /* Release */ = {
+		0767AA32277EB40B001F5596 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -194,7 +188,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -237,46 +231,50 @@
 			};
 			name = Release;
 		};
-		07456A02277D75A7005FE154 /* Debug */ = {
+		0767AA34277EB40B001F5596 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				DEVELOPMENT_TEAM = KP79P2JKW3;
+				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		07456A03277D75A7005FE154 /* Release */ = {
+		0767AA35277EB40B001F5596 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				DEVELOPMENT_TEAM = KP79P2JKW3;
+				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		074569F5277D75A7005FE154 /* Build configuration list for PBXProject "Herencia" */ = {
+		0767AA2A277EB40B001F5596 /* Build configuration list for PBXProject "SaludosEstatico" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				074569FF277D75A7005FE154 /* Debug */,
-				07456A00277D75A7005FE154 /* Release */,
+				0767AA31277EB40B001F5596 /* Debug */,
+				0767AA32277EB40B001F5596 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07456A01277D75A7005FE154 /* Build configuration list for PBXNativeTarget "Herencia" */ = {
+		0767AA33277EB40B001F5596 /* Build configuration list for PBXNativeTarget "SaludosEstatico" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07456A02277D75A7005FE154 /* Debug */,
-				07456A03277D75A7005FE154 /* Release */,
+				0767AA34277EB40B001F5596 /* Debug */,
+				0767AA35277EB40B001F5596 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 074569F2277D75A6005FE154 /* Project object */;
+	rootObject = 0767AA27277EB40B001F5596 /* Project object */;
 }
