@@ -7,8 +7,6 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface Saludador : NSObject {
     char *saludo;
 }
@@ -17,5 +15,3 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)setSaludo:(char *)unSaludo y:(char *)unaColetilla;
 -(void)saluda;
 @end
-
-NS_ASSUME_NONNULL_END
