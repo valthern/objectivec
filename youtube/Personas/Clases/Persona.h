@@ -16,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 }
 -(id)initWithName:(NSString *)name andAge:(NSInteger *)age;
 -(void)print;
+
+//polimorfismo
+-(void)EstoyCasado;
+-(void)EstoyCasado:(BOOL)estatus;
 @end
 
 NS_ASSUME_NONNULL_END

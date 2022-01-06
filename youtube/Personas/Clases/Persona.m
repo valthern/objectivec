@@ -13,9 +13,14 @@
     edadPersona = age;
     return self;
 }
-
 -(void)print {
     NSLog(@"Nombre: %@", nombrePersona);
     NSLog(@"Edad: %i", (int)edadPersona);
+}
+-(void)EstoyCasado{
+    NSLog(@"No lo estoy, Clase Persona");
+}
+-(void)EstoyCasado:(BOOL)estatus{
+    NSLog(@"Yo clase (Persona) %@", (estatus == YES))
 }
 @end

@@ -6,11 +6,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Persona.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Empleado : NSObject
-
+@interface Empleado : Persona
+{
+    NSString *empleadoNivelEstudios;
+}
+-(id)initWithName:(NSString *)name andAge:(NSInteger *)age andEducation:(NSString *)education;
+-(void)print;
 @end
 
 NS_ASSUME_NONNULL_END
