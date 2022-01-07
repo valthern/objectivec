@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07D8C45F2787F08E00D82FA5 /* Gerente.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D8C45E2787F08E00D82FA5 /* Gerente.m */; };
 		07F57188278660530073BA7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F57187278660530073BA7F /* main.m */; };
 		07F57191278661A20073BA7F /* Persona.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F57190278661A20073BA7F /* Persona.m */; };
 		07F5719527866CC30073BA7F /* Empleado.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F5719427866CC30073BA7F /* Empleado.m */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07D8C45D2787F08E00D82FA5 /* Gerente.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gerente.h; sourceTree = "<group>"; };
+		07D8C45E2787F08E00D82FA5 /* Gerente.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Gerente.m; sourceTree = "<group>"; };
 		07F57184278660530073BA7F /* Personas */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Personas; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F57187278660530073BA7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07F5718F278661A20073BA7F /* Persona.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Persona.h; sourceTree = "<group>"; };
@@ -44,6 +47,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07D8C4582787EFC200D82FA5 /* Persona */ = {
+			isa = PBXGroup;
+			children = (
+				07F5718F278661A20073BA7F /* Persona.h */,
+				07F57190278661A20073BA7F /* Persona.m */,
+			);
+			path = Persona;
+			sourceTree = "<group>";
+		};
+		07D8C4592787EFDB00D82FA5 /* Gerente */ = {
+			isa = PBXGroup;
+			children = (
+				07D8C45D2787F08E00D82FA5 /* Gerente.h */,
+				07D8C45E2787F08E00D82FA5 /* Gerente.m */,
+			);
+			path = Gerente;
+			sourceTree = "<group>";
+		};
 		07F5717B278660520073BA7F = {
 			isa = PBXGroup;
 			children = (
@@ -72,9 +93,9 @@
 		07F5718E2786617B0073BA7F /* Clases */ = {
 			isa = PBXGroup;
 			children = (
+				07D8C4592787EFDB00D82FA5 /* Gerente */,
+				07D8C4582787EFC200D82FA5 /* Persona */,
 				07F5719227866CAB0073BA7F /* Empleado */,
-				07F5718F278661A20073BA7F /* Persona.h */,
-				07F57190278661A20073BA7F /* Persona.m */,
 			);
 			path = Clases;
 			sourceTree = "<group>";
@@ -123,7 +144,7 @@
 				};
 			};
 			buildConfigurationList = 07F5717F278660520073BA7F /* Build configuration list for PBXProject "Personas" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -147,6 +168,7 @@
 			files = (
 				07F5719527866CC30073BA7F /* Empleado.m in Sources */,
 				07F57191278661A20073BA7F /* Persona.m in Sources */,
+				07D8C45F2787F08E00D82FA5 /* Gerente.m in Sources */,
 				07F57188278660530073BA7F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,7 +227,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -258,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -271,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KP79P2JKW3;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -281,6 +304,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KP79P2JKW3;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

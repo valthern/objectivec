@@ -16,7 +16,13 @@
 }
 -(void)print{
     NSLog(@"Name: %@", nombrePersona);
-    NSLog(@"Age: %i", (int)edadPersona);
+    NSLog(@"Age: %d", (int)edadPersona);
     NSLog(@"Education: %@", empleadoNivelEstudios);
+}
+-(void)estoyCasado{
+    NSLog(@"No lo estoy, Clase Empleado");
+}
+-(void)estoyCasado:(BOOL)estatus{
+    NSLog(@"Yo clase (Empleado) %@", (estatus == YES) ? @"Sí estoy casado" : @"No estoy casado");
 }
 @end

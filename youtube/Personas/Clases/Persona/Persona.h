@@ -18,8 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)print;
 
 //polimorfismo
--(void)EstoyCasado;
--(void)EstoyCasado:(BOOL)estatus;
+-(void)estoyCasado;
+-(void)estoyCasado:(BOOL)estatus;
 @end
 
 NS_ASSUME_NONNULL_END

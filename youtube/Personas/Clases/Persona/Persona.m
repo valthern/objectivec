@@ -17,10 +17,10 @@
     NSLog(@"Nombre: %@", nombrePersona);
     NSLog(@"Edad: %i", (int)edadPersona);
 }
--(void)EstoyCasado{
+-(void)estoyCasado{
     NSLog(@"No lo estoy, Clase Persona");
 }
--(void)EstoyCasado:(BOOL)estatus{
-    NSLog(@"Yo clase (Persona) %@", (estatus == YES))
+-(void)estoyCasado:(BOOL)estatus{
+    NSLog(@"Yo clase (Persona) %@", (estatus == YES) ? @"Sí estoy casado" : @"No estoy casado");
 }
 @end
