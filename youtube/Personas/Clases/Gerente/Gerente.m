@@ -9,7 +9,7 @@
 
 @implementation Gerente
 -(void)estoyCasado{
-    NSLog(@"No lo estoy clase (Gerente)");
+    NSLog(@"No lo estoy clase Gerente");
 }
 -(void)estoyCasado:(BOOL)estatus{
     NSLog(@"Yo Clase (Gerente) %@", (estatus == YES) ? @"Si estoy casado" : @"No estoy casado");

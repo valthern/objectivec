@@ -3,7 +3,7 @@
 //  Personas
 //
 //  Created by Omar I. Martínez Gómez on 05/01/22.
-//
+//  Ejercicio de Herencia y Polimorfismo
 
 #import <Foundation/Foundation.h>
 // En la herencia ya no se necesita llamar a Persona, puesto que
@@ -38,6 +38,10 @@ int main(int argc, const char * argv[]) {
         [empleado estoyCasado:NO];
         NSLog(@"---------------");
         [gerente estoyCasado:YES];
+        
+        // Castear para llamar al método de la clase gerente que tiene un método
+        // diferente
+        [(Gerente *)gerente mostrarSalario];
     }
     return 0;
 }
